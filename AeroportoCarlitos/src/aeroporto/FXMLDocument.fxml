@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aeroporto.FXMLDocumentController">
+   <children>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="393.0" prefWidth="602.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Apresentação">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="366.0" fitWidth="602.0" opacity="0.35" pickOnBounds="true">
+                           <image>
+                              <Image url="@port.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="129.0" layoutY="91.0" text="Aeroporto AirCarlitos">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="196.0" text="Desenvolvedores:">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="226.0" prefHeight="31.0" prefWidth="99.0" text="Igor Lima">
+                           <font>
+                              <Font name="System Italic" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="257.0" prefHeight="31.0" prefWidth="222.0" text="Arthur Miranda Moreira">
+                           <font>
+                              <Font name="System Italic" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="288.0" prefHeight="31.0" prefWidth="315.0" text="Arthur de Almeida Sales Secundino">
+                           <font>
+                              <Font name="System Italic" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="319.0" prefHeight="31.0" prefWidth="294.0" text="Arthur Afonso Frade de Aquino">
+                           <font>
+                              <Font name="System Italic" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Adicionar">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="371.0" prefWidth="602.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="Pessoa">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="image1" fitHeight="351.0" fitWidth="602.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@aero.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <TextField fx:id="txt2" layoutX="168.0" layoutY="60.0" prefHeight="33.0" prefWidth="189.0" />
+                                          <TextField fx:id="txt3" layoutX="168.0" layoutY="104.0" prefHeight="33.0" prefWidth="189.0" />
+                                          <TextField fx:id="txt5" layoutX="168.0" layoutY="147.0" prefHeight="33.0" prefWidth="189.0" />
+                                          <TextField fx:id="txt6" layoutX="168.0" layoutY="269.0" prefHeight="33.0" prefWidth="189.0" />
+                                          <TextField fx:id="txt1" layoutX="168.0" layoutY="20.0" prefHeight="33.0" prefWidth="189.0" />
+                                          <Label fx:id="lab1" layoutX="22.0" layoutY="22.0" prefHeight="29.0" prefWidth="137.0" text="Nome:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lab4" layoutX="22.0" layoutY="201.0" prefHeight="29.0" prefWidth="137.0" text="Tipo de pessoa:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lab5" layoutX="22.0" layoutY="149.0" prefHeight="29.0" prefWidth="137.0" text="Número do voo:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lab6" layoutX="22.0" layoutY="271.0" prefHeight="29.0" prefWidth="137.0" text="Código:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lab2" layoutX="22.0" layoutY="62.0" prefHeight="29.0" prefWidth="137.0" text="CPF:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lab3" layoutX="22.0" layoutY="106.0" prefHeight="29.0" prefWidth="137.0" text="Idade:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="AdicionarPes" layoutX="428.0" layoutY="232.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="38.0" prefWidth="113.0" text="Adicionar">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Button>
+                                          <RadioButton fx:id="radioPiloto" layoutX="168.0" layoutY="189.0" mnemonicParsing="false" onAction="#modificaVarEDec" text="Piloto">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="Group" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton fx:id="radioCopiloto" layoutX="287.0" layoutY="189.0" mnemonicParsing="false" onAction="#modificaVarEDec" text="CoPiloto" toggleGroup="$Group">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </RadioButton>
+                                          <RadioButton fx:id="radioAeromoca" layoutX="168.0" layoutY="232.0" mnemonicParsing="false" onAction="#modificaVarEDec" text="Aeromoça" toggleGroup="$Group">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </RadioButton>
+                                          <RadioButton fx:id="radioViajante" layoutX="288.0" layoutY="232.0" mnemonicParsing="false" onAction="#modificaVarEDec" text="Viajante" toggleGroup="$Group">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Avião">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="image" fitHeight="351.0" fitWidth="602.0" layoutY="1.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@aero.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <TextField fx:id="avtxt2" layoutX="168.0" layoutY="60.0" prefHeight="33.0" prefWidth="189.0" />
+                                          <TextField fx:id="avtxt4" layoutX="168.0" layoutY="234.0" prefHeight="33.0" prefWidth="189.0" />
+                                          <TextField fx:id="avtxt5" layoutX="168.0" layoutY="191.0" prefHeight="33.0" prefWidth="189.0" />
+                                          <TextField fx:id="avtxt6" layoutX="168.0" layoutY="149.0" prefHeight="33.0" prefWidth="189.0" />
+                                          <TextField fx:id="avtxt1" layoutX="168.0" layoutY="20.0" prefHeight="33.0" prefWidth="189.0" />
+                                          <Label fx:id="lab1avi" layoutX="22.0" layoutY="23.0" prefHeight="29.0" prefWidth="137.0" text="Nome do avião:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lab4avi" layoutX="22.0" layoutY="236.0" prefHeight="29.0" prefWidth="137.0" text="Tara:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lab5avi" layoutX="22.0" layoutY="193.0" prefHeight="29.0" prefWidth="137.0" text="Carga:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lab6avi" layoutX="22.0" layoutY="149.0" prefHeight="29.0" prefWidth="137.0" text="Capacidade:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lab2avi" layoutX="22.0" layoutY="62.0" prefHeight="29.0" prefWidth="137.0" text="Situação:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lab3avi" layoutX="22.0" layoutY="106.0" prefHeight="29.0" prefWidth="137.0" text="Tipo de avi:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="AdicionarAvi" layoutX="428.0" layoutY="232.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="38.0" prefWidth="113.0" text="Adicionar">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Button>
+                                          <RadioButton fx:id="radioPassageiros" layoutX="168.0" layoutY="107.0" mnemonicParsing="false" onAction="#modificaVarEDec" text="Passageiros">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="grupo" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton fx:id="radioJatinho" layoutX="286.0" layoutY="107.0" mnemonicParsing="false" onAction="#modificaVarEDec" text="Jatinho" toggleGroup="$grupo">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </RadioButton>
+                                          <RadioButton fx:id="radioCargueiro" layoutX="376.0" layoutY="107.0" mnemonicParsing="false" onAction="#modificaVarEDec" text="Cargueiro" toggleGroup="$grupo">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Voo">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="image11" fitHeight="351.0" fitWidth="602.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@aero.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <TextField fx:id="vootxt2" layoutX="168.0" layoutY="60.0" prefHeight="33.0" prefWidth="189.0" />
+                                          <TextField fx:id="vootxt3" layoutX="168.0" layoutY="104.0" prefHeight="117.0" prefWidth="407.0" />
+                                          <TextField fx:id="vootxt1" layoutX="168.0" layoutY="20.0" prefHeight="33.0" prefWidth="189.0" />
+                                          <Label fx:id="lab1voo" layoutX="22.0" layoutY="23.0" prefHeight="29.0" prefWidth="137.0" text="Número do Voo:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lab2voo" layoutX="22.0" layoutY="62.0" prefHeight="29.0" prefWidth="137.0" text="Nome do Avião:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lab3voo" layoutX="22.0" layoutY="106.0" prefHeight="29.0" prefWidth="137.0" text="Descrição:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="AdicionarVoo" layoutX="462.0" layoutY="258.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="38.0" prefWidth="113.0" text="Adicionar">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Pesquisar">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="374.0" prefWidth="602.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="Individual">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TabPane prefHeight="343.0" prefWidth="602.0" tabClosingPolicy="UNAVAILABLE">
+                                             <tabs>
+                                                <Tab text="Pessoa">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <ImageView fitHeight="307.0" fitWidth="602.0" opacity="0.49" pickOnBounds="true">
+                                                               <image>
+                                                                  <Image url="@air.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <TextField fx:id="txtpes" layoutX="233.0" layoutY="47.0" prefHeight="36.0" prefWidth="168.0" />
+                                                            <Button fx:id="pesquisarPes" layoutX="48.0" layoutY="109.0" mnemonicParsing="false" onAction="#btnClick" text="Pesquisar">
+                                                               <font>
+                                                                  <Font size="19.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Label layoutX="48.0" layoutY="47.0" prefHeight="31.0" prefWidth="178.0" text="Nome da Pessoa:">
+                                                               <font>
+                                                                  <Font size="21.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                                <Tab text="Avião">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <ImageView fitHeight="307.0" fitWidth="602.0" opacity="0.49" pickOnBounds="true">
+                                                               <image>
+                                                                  <Image url="@air.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <TextField fx:id="txtavi" layoutX="233.0" layoutY="47.0" prefHeight="36.0" prefWidth="168.0" />
+                                                            <Button fx:id="pesquisarAvi" layoutX="48.0" layoutY="109.0" mnemonicParsing="false" onAction="#btnClick" text="Pesquisar">
+                                                               <font>
+                                                                  <Font size="19.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Label fx:id="l8" layoutX="48.0" layoutY="47.0" prefHeight="31.0" prefWidth="178.0" text="Nome do Avião:">
+                                                               <font>
+                                                                  <Font size="21.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                                <Tab text="Voo">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <ImageView fitHeight="307.0" fitWidth="602.0" opacity="0.49" pickOnBounds="true">
+                                                               <image>
+                                                                  <Image url="@air.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <TextField fx:id="txtvoo" layoutX="233.0" layoutY="47.0" prefHeight="36.0" prefWidth="168.0" />
+                                                            <Button fx:id="pesquisarVoo" layoutX="48.0" layoutY="109.0" mnemonicParsing="false" onAction="#btnClick" text="Pesquisar">
+                                                               <font>
+                                                                  <Font size="19.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Label fx:id="l7" layoutX="48.0" layoutY="47.0" prefHeight="31.0" prefWidth="178.0" text="Número do voo:">
+                                                               <font>
+                                                                  <Font size="21.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                             </tabs>
+                                          </TabPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Lista">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TabPane prefHeight="340.0" prefWidth="602.0" tabClosingPolicy="UNAVAILABLE">
+                                             <tabs>
+                                                <Tab text="Pessoa">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="507.0">
+                                                         <children>
+                                                            <ImageView fitHeight="307.0" fitWidth="602.0" opacity="0.49" pickOnBounds="true">
+                                                               <image>
+                                                                  <Image url="@air.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Button fx:id="listaPes" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="39.0" prefWidth="132.0" text="Pesquisar">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Button>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                                <Tab text="Avião">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <ImageView fitHeight="307.0" fitWidth="602.0" opacity="0.49" pickOnBounds="true">
+                                                               <image>
+                                                                  <Image url="@air.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Button fx:id="listaAvi" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="39.0" prefWidth="132.0" text="Pesquisar">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Button>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                                <Tab text="Voo">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <ImageView fitHeight="307.0" fitWidth="602.0" opacity="0.49" pickOnBounds="true">
+                                                               <image>
+                                                                  <Image url="@air.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Button fx:id="listaVoo" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="39.0" prefWidth="132.0" text="Pesquisar">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Button>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                             </tabs>
+                                          </TabPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
